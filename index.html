@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Ritheesh MG - B.E. Cyber Security student portfolio with certifications, learning focus, and contact details."
+    />
+    <title>Ritheesh MG | Cyber Security Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+    <canvas id="particleCanvas" class="particle-canvas" aria-hidden="true"></canvas>
+    <div class="scanlines" aria-hidden="true"></div>
+    <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+    <div class="noise-overlay" aria-hidden="true"></div>
+    <aside class="section-dock" aria-label="Section quick navigation">
+      <a href="#home" data-target="home"></a>
+      <a href="#about" data-target="about"></a>
+      <a href="#education" data-target="education"></a>
+      <a href="#skills" data-target="skills"></a>
+      <a href="#certifications" data-target="certifications"></a>
+      <a href="#learning" data-target="learning"></a>
+      <a href="#contact" data-target="contact"></a>
+    </aside>
+
+    <header class="site-header">
+      <a class="brand" href="#home">Ritheesh MG</a>
+      <nav class="site-nav">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#certifications">Certifications</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark and light mode">
+        <span class="theme-label">Dark</span>
+      </button>
+    </header>
+
+    <main id="home">
+      <section class="hero section reveal">
+        <p class="eyebrow">B.E. Cyber Security Student</p>
+        <p class="status-line">
+          <span class="dot"></span>
+          Offensive Security Learning Mode Active
+        </p>
+        <h1>Ritheesh MG</h1>
+        <p class="subtitle">
+          Aspiring Offensive Security Professional focused on ethical hacking, vulnerability analysis, and practical cybersecurity learning.
+        </p>
+        <div class="hero-console">
+          <p><span>root@ritheesh</span>:~$ status --focus</p>
+          <p>mode: ethical_hacking</p>
+          <p>phase: skill_building</p>
+          <p>target: offensive_security_expert</p>
+        </div>
+        <div class="hero-meta">
+          <span>Peri Institute of Technology, Chennai</span>
+          <span>Batch 2024 - 2028</span>
+          <span>Expected Graduation: 2028</span>
+        </div>
+        <div class="cta-group">
+          <a class="btn btn-primary magnetic" href="#contact">Get In Touch</a>
+          <a class="btn btn-secondary magnetic" href="#certifications">View Credentials</a>
+        </div>
+        <p class="scroll-hint">Scroll to explore interactive profile feed</p>
+      </section>
+
+      <section id="about" class="section reveal">
+        <h2>About Me</h2>
+        <p>
+          I am a second-year B.E. Cyber Security student at Peri Institute of Technology, Chennai. I am strongly interested in ethical hacking and offensive security, and I am focused on building practical technical ability through continuous learning, workshops, and hands-on exposure to cybersecurity tools and workflows.
+        </p>
+        <p>
+          I work with strong concentration, stay committed to the task in front of me, and consistently complete work on time. My long-term goal is to grow into a capable offensive security professional with real-world technical depth.
+        </p>
+      </section>
+
+      <section id="education" class="section reveal">
+        <h2>Education</h2>
+        <article class="card tilt-card">
+          <h3>B.E. Cyber Security</h3>
+          <p>Peri Institute of Technology, Chennai</p>
+          <p>Second Year, Fourth Semester</p>
+          <p>Batch: 2024 - 2028</p>
+        </article>
+      </section>
+
+      <section id="skills" class="section reveal">
+        <h2>Skills & Tools</h2>
+        <div class="grid three">
+          <article class="card tilt-card">
+            <h3>Programming</h3>
+            <ul>
+              <li>Python</li>
+              <li>Java</li>
+              <li>HTML</li>
+            </ul>
+          </article>
+          <article class="card tilt-card">
+            <h3>Security Tools</h3>
+            <ul>
+              <li>Nmap, Fping</li>
+              <li>OpenVAS, Nexpose</li>
+              <li>Metasploit, SQLmap</li>
+              <li>Hashcat, Wireshark</li>
+            </ul>
+          </article>
+          <article class="card tilt-card">
+            <h3>Platforms & Strengths</h3>
+            <ul>
+              <li>Windows, Kali Linux</li>
+              <li>Task focus & consistency</li>
+              <li>On-time execution</li>
+              <li>Hands-on learning approach</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section id="certifications" class="section reveal">
+        <h2>Certifications</h2>
+        <div class="grid two">
+          <article class="card cert-card tilt-card">
+            <img src="assets/certificate-guvi.png" alt="GUVI HCL Python certificate" />
+            <div>
+              <h3>Python</h3>
+              <p>GUVI / HCL</p>
+              <p>Issued: April 19, 2025</p>
+              <p>Credential ID: ebnl25x4053k47X1h9</p>
+            </div>
+          </article>
+          <article class="card cert-card tilt-card">
+            <img src="assets/certificate-csec.png" alt="Cybersecurity Masterclass certificate" />
+            <div>
+              <h3>Cybersecurity Masterclass</h3>
+              <p>The Vault: Protecting IP in a Digital World</p>
+              <p>Organized by iTNT Hub & CSEC India</p>
+              <p>Date: July 18, 2025 | Chennai</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="learning" class="section reveal">
+        <h2>Currently Learning</h2>
+        <p>
+          I am currently strengthening my practical understanding of reconnaissance, vulnerability assessment, and security testing through guided labs and direct tool usage.
+        </p>
+        <div class="grid two">
+          <article class="card tilt-card">
+            <h3>Hands-On Exposure</h3>
+            <ul>
+              <li>Network scanning and host discovery</li>
+              <li>Vulnerability assessment workflows</li>
+              <li>Traffic inspection and packet analysis</li>
+              <li>Offensive security fundamentals</li>
+            </ul>
+          </article>
+          <article class="card tilt-card">
+            <h3>Current Direction</h3>
+            <ul>
+              <li>Building foundation for future portfolio projects</li>
+              <li>Improving tool proficiency with consistency</li>
+              <li>Preparing for real-world security problem solving</li>
+              <li>Deepening ethical hacking knowledge step by step</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact" class="section reveal">
+        <h2>Contact</h2>
+        <div class="grid two">
+          <article class="card tilt-card">
+            <p>Chennai, Tamil Nadu, India</p>
+            <p><a href="mailto:ritheesh.mg2808@gmail.com">ritheesh.mg2808@gmail.com</a></p>
+            <p><a href="tel:+919894860860">+91 9894860860</a></p>
+          </article>
+          <article class="card tilt-card">
+            <p><a href="https://www.linkedin.com/in/ritheesh-mg-038982347/" target="_blank" rel="noreferrer">LinkedIn Profile</a></p>
+            <p><a href="https://github.com/ritheesh2808" target="_blank" rel="noreferrer">GitHub Profile</a></p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© <span id="year"></span> Ritheesh MG. Built with focus and consistency.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
