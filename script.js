@@ -120,6 +120,47 @@ if (yearNode) {
   yearNode.textContent = new Date().getFullYear();
 }
 
+const galleryLightbox = document.getElementById("galleryLightbox");
+const lightboxImage = document.getElementById("lightboxImage");
+const lightboxCaption = document.getElementById("lightboxCaption");
+const galleryTriggers = document.querySelectorAll(".gallery-trigger");
+const lightboxClose = galleryLightbox?.querySelector(".lightbox-close");
+
+const openGalleryLightbox = (src, caption, alt) => {
+  if (!galleryLightbox || !lightboxImage || !lightboxCaption) return;
+  lightboxImage.src = src;
+  lightboxImage.alt = alt;
+  lightboxCaption.textContent = caption;
+  galleryLightbox.showModal();
+};
+
+galleryTriggers.forEach((trigger) => {
+  trigger.addEventListener("click", () => {
+    const img = trigger.querySelector("img");
+    openGalleryLightbox(
+      trigger.dataset.full,
+      trigger.dataset.caption,
+      img?.alt || "Project screenshot"
+    );
+  });
+});
+
+lightboxClose?.addEventListener("click", () => {
+  galleryLightbox?.close();
+});
+
+galleryLightbox?.addEventListener("click", (event) => {
+  if (event.target === galleryLightbox) {
+    galleryLightbox.close();
+  }
+});
+
+document.addEventListener("keydown", (event) => {
+  if (event.key === "Escape" && galleryLightbox?.open) {
+    galleryLightbox.close();
+  }
+});
+
 if (particleCanvas) {
   const ctx = particleCanvas.getContext("2d");
   const particles = [];

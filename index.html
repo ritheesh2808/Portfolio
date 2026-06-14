@@ -29,6 +29,7 @@
       <a href="#skills" data-target="skills"></a>
       <a href="#certifications" data-target="certifications"></a>
       <a href="#learning" data-target="learning"></a>
+      <a href="#projects" data-target="projects"></a>
       <a href="#contact" data-target="contact"></a>
     </aside>
 
@@ -38,6 +39,7 @@
         <a href="#about">About</a>
         <a href="#skills">Skills</a>
         <a href="#certifications">Certifications</a>
+        <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
       </nav>
       <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark and light mode">
@@ -177,6 +179,131 @@
         </div>
       </section>
 
+      <section id="projects" class="section reveal">
+        <p class="eyebrow">Featured Build</p>
+        <h2>Projects</h2>
+        <article class="project-showcase">
+          <header class="project-showcase-header">
+            <div class="project-title-block">
+              <span class="project-version">v1.1.0</span>
+              <h3>AI Security Copilot</h3>
+              <p class="project-tagline">Pentest vulnerability dashboard &amp; scan intelligence platform</p>
+            </div>
+            <a
+              class="btn btn-primary magnetic project-repo-btn"
+              href="https://github.com/ritheesh2808/AI-Security-Copilot"
+              target="_blank"
+              rel="noreferrer"
+            >
+              View Repository
+            </a>
+          </header>
+
+          <p class="project-description">
+            A portfolio-grade cybersecurity platform built using Python, Flask, SQLite, Nmap XML parsing, CVE intelligence integration, historical scan tracking, risk assessment, and PDF report generation.
+          </p>
+
+          <div class="project-meta">
+            <span>Python · Flask · SQLite</span>
+            <span>Nmap XML · NVD CVE</span>
+            <span>PDF Reports · CI/CD</span>
+          </div>
+
+          <div class="grid two project-details">
+            <article class="card tilt-card">
+              <h4>Features</h4>
+              <ul class="feature-list">
+                <li>Nmap XML Upload</li>
+                <li>Service Discovery</li>
+                <li>CVE Enrichment</li>
+                <li>NVD Integration</li>
+                <li>Historical Scan Tracking</li>
+                <li>SQLite Persistence</li>
+                <li>Risk Assessment</li>
+                <li>PDF Report Generation</li>
+                <li>Flask Dashboard</li>
+                <li>GitHub Actions CI</li>
+              </ul>
+            </article>
+            <article class="card tilt-card">
+              <h4>Technologies</h4>
+              <div class="tech-tags">
+                <span>Python</span>
+                <span>Flask</span>
+                <span>SQLite</span>
+                <span>Nmap</span>
+                <span>ReportLab</span>
+                <span>Bootstrap</span>
+                <span>GitHub Actions</span>
+              </div>
+              <div class="project-highlights">
+                <p><strong>Pipeline:</strong> Upload Nmap XML → parse services → enrich with CVE data → assess risk → persist history → export PDF.</p>
+                <p><strong>Outcome:</strong> End-to-end scan workflow from raw recon output to actionable, shareable security reporting.</p>
+              </div>
+            </article>
+          </div>
+
+          <div class="project-gallery">
+            <h4>Application Screenshots</h4>
+            <p class="gallery-intro">Interactive dashboard, scan history, vulnerability detail views, and generated PDF reporting.</p>
+            <div class="gallery-grid">
+              <figure class="gallery-item tilt-card">
+                <button
+                  class="gallery-trigger"
+                  type="button"
+                  data-full="assets/dashboard.png"
+                  data-caption="Dashboard — upload Nmap XML, view findings, and risk metrics at a glance."
+                  aria-label="Open dashboard screenshot"
+                >
+                  <img src="assets/dashboard.png" alt="AI Security Copilot dashboard with vulnerability findings table" loading="lazy" />
+                  <span class="gallery-overlay">Dashboard</span>
+                </button>
+                <figcaption>Dashboard overview</figcaption>
+              </figure>
+              <figure class="gallery-item tilt-card">
+                <button
+                  class="gallery-trigger"
+                  type="button"
+                  data-full="assets/history.png"
+                  data-caption="Scan History — track past assessments with timestamps and quick access to reports."
+                  aria-label="Open scan history screenshot"
+                >
+                  <img src="assets/history.png" alt="Historical scan tracking page with past assessment records" loading="lazy" />
+                  <span class="gallery-overlay">Scan History</span>
+                </button>
+                <figcaption>Historical scan tracking</figcaption>
+              </figure>
+              <figure class="gallery-item tilt-card">
+                <button
+                  class="gallery-trigger"
+                  type="button"
+                  data-full="assets/scan-details.png"
+                  data-caption="Scan Details — deep-dive into hosts, services, CVEs, and risk ratings per finding."
+                  aria-label="Open scan details screenshot"
+                >
+                  <img src="assets/scan-details.png" alt="Detailed scan view showing host services and CVE enrichment" loading="lazy" />
+                  <span class="gallery-overlay">Scan Details</span>
+                </button>
+                <figcaption>Detailed vulnerability view</figcaption>
+              </figure>
+              <figure class="gallery-item tilt-card">
+                <button
+                  class="gallery-trigger"
+                  type="button"
+                  data-full="assets/pdf-report.png"
+                  data-caption="PDF Report — professional export with executive summary and finding breakdown."
+                  aria-label="Open PDF report screenshot"
+                >
+                  <img src="assets/pdf-report.png" alt="Generated PDF security assessment report preview" loading="lazy" />
+                  <span class="gallery-overlay">PDF Report</span>
+                </button>
+                <figcaption>PDF report generation</figcaption>
+              </figure>
+            </div>
+          </div>
+        </article>
+      </section>
+
       <section id="contact" class="section reveal">
         <h2>Contact</h2>
         <div class="grid two">
@@ -196,6 +323,14 @@
     <footer class="site-footer">
       <p>© <span id="year"></span> Ritheesh MG. Built with focus and consistency.</p>
     </footer>
+
+    <dialog class="gallery-lightbox" id="galleryLightbox" aria-label="Screenshot preview">
+      <button class="lightbox-close" type="button" aria-label="Close preview">&times;</button>
+      <figure class="lightbox-figure">
+        <img id="lightboxImage" src="" alt="" />
+        <figcaption id="lightboxCaption"></figcaption>
+      </figure>
+    </dialog>
 
     <script src="script.js"></script>
   </body>
